@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yummy Pizza Cafe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:Poppins, sans-serif;
+    background:#f8f8f8;
+}
+
+/* NAVBAR */
+nav{
+    background:#e23744;
+    color:white;
+    padding:15px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* HERO SECTION */
+.hero{
+    background:url("https://images.unsplash.com/photo-1601924582975-7e6b1a5e2b45") center/cover;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.btn{
+    background:#e23744;
+    color:white;
+    padding:12px 20px;
+    border:none;
+    border-radius:25px;
+    text-decoration:none;
+    margin:10px;
+    display:inline-block;
+}
+
+/* MENU */
+.menu{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    width:250px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+
+.card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:10px 0 5px;
+}
+
+.price{
+    color:#e23744;
+    font-weight:bold;
+}
+
+/* REVIEWS */
+.reviews{
+    background:white;
+    padding:40px;
+    text-align:center;
+}
+
+/* CONTACT */
+.contact{
+    padding:40px;
+    text-align:center;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>🍕 Yummy Pizza Cafe</nav>
+
+<section class="hero">
+<h1>Best Pizza in Phursungi</h1>
+<p>Delicious food • Fast service • Affordable price</p>
+<a href="tel:+917350759183" class="btn">Call Now</a>
+<a href="#" class="btn">Order Now</a>
+</section>
+
+<section class="menu">
+<h2>Our Popular Menu</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e">
+<h3>Margherita Pizza</h3>
+<p class="price">₹149</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<h3>Veg Burger</h3>
+<p class="price">₹89</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add">
+<h3>Cold Coffee</h3>
+<p class="price">₹99</p>
+</div>
+
+</div>
+</section>
+
+<section class="reviews">
+<h2>Customer Reviews ⭐</h2>
+<p>"Best pizza in the area!" ⭐⭐⭐⭐⭐</p>
+<p>"Affordable and tasty food." ⭐⭐⭐⭐</p>
+<p>"Nice cafe atmosphere." ⭐⭐⭐⭐⭐</p>
+</section>
+
+<section class="contact">
+<h2>Visit Us</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=pune&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="90%" height="250" style="border:0;"></iframe>
+
+<p>📞 +91 73507 59183</p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/917350759183">💬</a>
+
+</body>
+</html>
