@@ -1,0 +1,191 @@
+p<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yummy Pizza & Cafe | Phursungi</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
+body{background:#fafafa;color:#333;}
+
+nav{
+position:sticky;top:0;background:#fff;
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 40px;box-shadow:0 4px 10px rgba(0,0,0,0.08);z-index:1000;
+}
+nav h2{color:#e23744;}
+nav a{text-decoration:none;margin-left:20px;color:#333;font-weight:500;}
+nav a:hover{color:#e23744;}
+
+.hero{
+height:90vh;position:relative;overflow:hidden;
+}
+.hero-slide{
+position:absolute;width:100%;height:100%;
+background-size:cover;background-position:center;
+opacity:0;transition:opacity 1s ease-in-out;
+}
+.hero-slide.active{opacity:1;}
+.hero-overlay{
+position:absolute;width:100%;height:100%;
+background:rgba(0,0,0,0.55);
+display:flex;flex-direction:column;
+justify-content:center;align-items:center;
+text-align:center;color:white;padding:20px;
+}
+.hero-overlay h1{font-size:48px;margin-bottom:15px;}
+.hero-overlay p{font-size:20px;margin-bottom:25px;}
+
+.btn{
+background:#e23744;color:white;
+padding:14px 28px;border-radius:30px;
+text-decoration:none;margin:10px;
+transition:0.3s;font-weight:600;
+}
+.btn:hover{background:black;}
+
+.section-title{
+text-align:center;font-size:32px;
+margin:70px 0 30px;font-weight:600;
+}
+.menu-container{
+display:flex;flex-wrap:wrap;
+justify-content:center;gap:25px;padding:20px;
+}
+.card{
+background:white;width:260px;border-radius:15px;
+overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+.card:hover{transform:translateY(-10px);}
+.card img{width:100%;height:170px;object-fit:cover;}
+.card-content{text-align:center;padding:15px;}
+.price{color:#e23744;font-weight:700;margin-top:8px;}
+
+.about,.contact,.reviews{
+padding:60px 20px;text-align:center;max-width:900px;margin:auto;
+}
+.review-box{
+background:#f5f5f5;margin:15px auto;
+padding:15px;border-radius:10px;max-width:600px;
+}
+
+footer{
+background:#111;color:white;text-align:center;
+padding:25px;margin-top:40px;
+}
+
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:white;
+padding:16px;border-radius:50%;
+font-size:22px;text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+@media(max-width:768px){
+nav{flex-direction:column;}
+.hero-overlay h1{font-size:34px;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>🍕 Yummy Pizza & Cafe</h2>
+<div>
+<a href="#menu">Menu</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1601924582975-7e6b1a5e2b45');"></div>
+<div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1548365328-9f547fb0953b');"></div>
+<div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1550547660-d9450f859349');"></div>
+
+<div class="hero-overlay">
+<h1>Fresh • Hot • Delicious</h1>
+<p>Best Pizza & Fast Food in Phursungi</p>
+<a href="tel:+917350759183" class="btn">Call Now</a>
+<a href="https://wa.me/917350759183?text=Hello%20I%20want%20to%20order" class="btn">Order on WhatsApp</a>
+</div>
+</section>
+
+<!-- MENU -->
+<h2 id="menu" class="section-title">Our Menu</h2>
+<div class="menu-container">
+
+<!-- PIZZAS -->
+<div class="card"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e"><div class="card-content"><h3>Plain Cheese</h3><div class="price">₹120</div></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1601924582975-7e6b1a5e2b45"><div class="card-content"><h3>Onion Cheese</h3><div class="price">₹140</div></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"><div class="card-content"><h3>Corn Capsicum</h3><div class="price">₹150</div></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1548365328-9f547fb0953b"><div class="card-content"><h3>Paneer Cheese</h3><div class="price">₹160</div></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349"><div class="card-content"><h3>Peppy Paneer</h3><div class="price">₹180</div></div></div>
+
+<!-- SANDWICH -->
+<div class="card"><img src="https://images.unsplash.com/photo-1617196032442-b9c6b0d8d307"><div class="card-content"><h3>Veg Grilled Sandwich</h3><div class="price">₹70</div></div></div>
+
+<!-- COFFEE -->
+<div class="card"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"><div class="card-content"><h3>Hot Coffee</h3><div class="price">₹30</div></div></div>
+
+<!-- MOMOS -->
+<div class="card"><img src="https://images.unsplash.com/photo-1625943553852-781c6dd46faa"><div class="card-content"><h3>Paneer Momos</h3><div class="price">₹120</div></div></div>
+
+<!-- SHAKES -->
+<div class="card"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699"><div class="card-content"><h3>Oreo Shake</h3><div class="price">₹90</div></div></div>
+
+<!-- ICE CREAM -->
+<div class="card"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"><div class="card-content"><h3>Chocolate Ice Cream</h3><div class="price">₹70</div></div></div>
+
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+<h2 class="section-title">About Us</h2>
+<p>
+Yummy Pizza & Cafe is one of the most loved fast-food spots in Phursungi, Pune.  
+We serve fresh pizzas, sandwiches, coffee, momos and shakes at affordable prices.
+</p>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+<h2 class="section-title">Customer Reviews ⭐</h2>
+<div class="review-box">"Best pizza in the area!" ⭐⭐⭐⭐⭐</div>
+<div class="review-box">"Very affordable and tasty." ⭐⭐⭐⭐</div>
+<div class="review-box">"Good service and nice seating." ⭐⭐⭐⭐⭐</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2 class="section-title">Visit Us</h2>
+<iframe src="https://maps.google.com/maps?q=Phursungi%20Pune&t=&z=15&ie=UTF8&iwloc=&output=embed"
+width="90%" height="300" style="border-radius:12px;"></iframe>
+<p><strong>📞 +91 73507 59183</strong></p>
+<p>📍 Phursungi, Pune, Maharashtra</p>
+</section>
+
+<footer>
+© 2026 Yummy Pizza & Cafe | Designed by Local Web Developer
+</footer>
+
+<a class="whatsapp" href="https://wa.me/917350759183">💬</a>
+
+<script>
+let slides=document.querySelectorAll('.hero-slide');
+let index=0;
+setInterval(()=>{
+slides[index].classList.remove('active');
+index=(index+1)%slides.length;
+slides[index].classList.add('active');
+},4000);
+</script>
+
+</body>
+</html>
